@@ -9,6 +9,7 @@ namespace Hoone
     {
         int suurus;
         int korteriNum;
+        int korrus;
 
         public EraMaja(int pindala = 50) : base(pindala)
         {
@@ -42,6 +43,12 @@ namespace Hoone
         {
             set{ KorteriNum = value; }
             get { return korteriNum; }
+
+        }
+        public int Korrus
+        {
+            set { korrus = value; }
+            get { return korrus; }
         }
         public override void NaitaInfo()
         {
